@@ -13,7 +13,6 @@ public class EnemyAI : MonoBehaviour
     public float attackRange = 2f; // Attack range
     public float attackCooldown = 1.5f; // Time between attacks
     public float damage = 10f; // Damage dealt per attack
-    public float health = 100f; // Enemy health
 
     // Reference to the HealthSystem component
     private HealthSystem healthSystem;
