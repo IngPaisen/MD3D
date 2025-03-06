@@ -24,6 +24,9 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Find the player in the scene by tag (Make sure your player has the tag "Player")
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
         // Get the NavMeshAgent component and set movement speed
         agent = GetComponent<NavMeshAgent>();
         agent.speed = moveSpeed;
